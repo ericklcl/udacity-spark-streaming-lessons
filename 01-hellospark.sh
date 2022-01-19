@@ -1,0 +1,1 @@
+docker container exec spark-master spark-submit /home/workspace/01-hellospark.py

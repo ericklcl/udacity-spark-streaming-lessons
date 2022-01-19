@@ -130,7 +130,7 @@ services:
       - SPARK_SSL_ENABLED=no
     volumes:
       - ./:/home/workspace/
-      - ./spark/jars:/opt/bitnami/spark/.ivy2
+      - ./spark/jars:/opt/bitnami/spark/.ivy2:z
 
 
 
