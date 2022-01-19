@@ -101,7 +101,7 @@ services:
     - "kafka"
     - "redis"
 
-  spark:
+  spark-master:
     image: docker.io/bitnami/spark:3-debian-10
     container_name: spark-master
     environment:
@@ -116,7 +116,7 @@ services:
       - ./:/home/workspace/
       - ./spark/jars:/opt/bitnami/spark/.ivy2
 
-  spark-worker-1:
+  spark-worker:
     image: docker.io/bitnami/spark:3-debian-10
     container_name: spark-worker
     environment:
